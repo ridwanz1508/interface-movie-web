@@ -1,0 +1,163 @@
+.myBG{
+    height: 100vh;
+    background: url('../assets/images/bg/bg-movie1.png');
+    background-size: cover;
+}
+.navbar {
+    position: fixed;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+.logo {
+    height: 60px;
+    width: 130px;
+    text-shadow: 2px 2px white;
+    border: 2px;
+}
+.navbar .dropdown-item:hover {
+    background-color: #343a40; 
+}
+.navbar a:hover, .navbar button:hover {
+    color: #ffc107;
+}
+/* Intro.css */
+.intro {
+    margin-top: 20vh;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+}
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.introButton, .playButton {
+    margin-top: 20px;
+}
+/* trending.css */
+.trending{
+    height: auto;
+    background: url('../assets/images/bg/scifi.jpg');
+    background-size: cover;
+}
+/* superhero.css */
+.superhero{
+    height: auto;
+    background: url('../assets/images/bg/spiderman.jpg');
+    background-size: cover;
+}
+/* image movie.css */
+.movieWrapper{
+    margin-top: 20px;
+}
+.movieImage {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.movieImage:hover .overlay {
+  opacity: 1;
+}
+.overlay-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.play-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+.play-button:hover {
+  transform: scale(1.1);
+}
+.images {
+    height: 400px;
+}
+/* footer.css */
+.footer {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    height: auto;
+}
+.sb__footer {
+  display: flex;
+  justify-content: space-around;
+  color: #ffc107;
+}
+.sb__footer-links {
+  display: flex;
+  align-items: center; 
+}
+.sb__footer-links-div {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  text-align: center; 
+}
+.sb__footer-links a {
+  text-decoration: none;
+  color: #fff; 
+}
+.sb__footer-links a:hover {
+  text-decoration: underline;
+}
+.sb__footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.sb__footer p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .sb__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sb__footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sb__footer-links-div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .sb__footer-links-div {
+    padding-top: 15px;
+  }
+}  
+.icon-spacing {
+margin-right: 10px;
+}
+
